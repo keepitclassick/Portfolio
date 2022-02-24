@@ -1,9 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  overflow: hidden;
   background-image: linear-gradient(
     to right,
     rgb(84, 26, 122),
     rgb(175, 174, 177)
   );
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .btn {
@@ -13,7 +26,7 @@ body {
   margin: 10px auto;
   display: inline block;
   border-radius: 50px;
-  border: 1px solid black;
+  border: 5px solid rgb(255, 255, 255);
   background: transparent;
   transition: 0.5s;
   font-size: 50px;
@@ -46,4 +59,9 @@ button:nth-child(3)::before {
 }
 button:nth-child(4)::before {
   content: "Porfolio";
+}
+
+.btn:hover::before {
+  color: yellow;
+  box-shadow: inset 10px 10px 15px;
 }
