@@ -42,7 +42,21 @@ class Particle {
 
 function init() {
   particleArray = [];
-  particleArray.push(new Particle(50, 50));
+  for (let i = 0; i < 500; i++) {
+    let x = Math.random() * canvas.width;
+    let y = Math.random() * canvas.height;
+    particleArray.push(new Particle(x, y));
+  }
+  //particleArray.push(new Particle(50, 50));
 }
 init();
 console.log(particleArray);
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let particle of particleArray) {
+    particle.draw();
+  }
+  requestAnimationFrame(animate);
+}
+animate();
