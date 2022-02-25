@@ -6,11 +6,11 @@
 
 body {
   overflow: hidden;
-  background-image: linear-gradient(
-    to right,
-    rgb(84, 26, 122),
-    rgb(175, 174, 177)
-  );
+  margin: 0;
+  display: grid;
+  place-content: center;
+  text-align: top;
+  background-color: rgb(63, 62, 62);
 }
 
 canvas {
@@ -19,49 +19,30 @@ canvas {
   left: 0;
 }
 
-.btn {
+#name {
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-family: "Courier Prime";
   position: relative;
-  width: 20%;
-  height: 120px;
-  margin: 10px auto;
-  display: inline block;
-  border-radius: 50px;
-  border: 5px solid rgb(255, 255, 255);
-  background: transparent;
-  transition: 0.5s;
-  font-size: 50px;
-  font-weight: bold;
-  color: white;
-  line-height: 110px;
-  min-width: 300px;
+  width: max-content;
+  text-align: center;
 }
 
-.btn::before {
+#name::before,
+#name::after {
   content: "";
   position: absolute;
-
-  width: 100%;
-  height: 100%;
   top: 0;
+  bottom: 0;
+  right: 0;
   left: 0;
-  border-radius: 50px;
-  transition: 0.5s;
 }
-
-button:nth-child(1)::before {
-  content: "Home";
+#name::before {
+  background-color: rgb(63, 62, 62);
+  animation: typewriter 5s steps(14) forwards;
 }
-button:nth-child(2)::before {
-  content: "About";
-}
-button:nth-child(3)::before {
-  content: "Languages";
-}
-button:nth-child(4)::before {
-  content: "Porfolio";
-}
-
-.btn:hover::before {
-  color: rgb(255, 255, 255);
-  box-shadow: inset 10px 10px 15px;
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
 }
