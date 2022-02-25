@@ -8,7 +8,7 @@ let particleArray = [];
 let mouse = {
   x: null,
   y: null,
-  radius: 150,
+  radius: 50,
 };
 
 window.addEventListener("mousemove", function (e) {
@@ -17,10 +17,10 @@ window.addEventListener("mousemove", function (e) {
   // console.log(mouse.x, mouse.y);
 });
 
-ctx.fillStyle = "White";
+ctx.fillStyle = "black";
 ctx.font = "30px Verdana";
-ctx.fillText("Kayla", 0, 30);
-const data = ctx.getImageData(0, 0, 100, 100);
+ctx.fillText("Kayla", 0, 50);
+const textCoords = ctx.getImageData(0, 0, 100, 100);
 
 class Particle {
   constructor(x, y) {
@@ -68,11 +68,17 @@ class Particle {
 }
 
 function init() {
-  particleArray = [];
-  for (let i = 0; i < 500; i++) {
-    let x = Math.random() * canvas.width;
-    let y = Math.random() * canvas.height;
-    particleArray.push(new Particle(x, y));
+  let y2 = textCoords.height;
+  let x2 = textCoords.width;
+
+  for (let y = 0; y < y2; y++) {
+    for (let x = 0; x < x2; x++) {
+      if (textCoords.data[y * 4 * textCoords.width + x * 4 + 3] > 128) {
+        let positionX = x;
+        let positionY = y;
+        particleArray.push(new Particle(positionX * 10, positionY * 10));
+      }
+    }
   }
   //particleArray.push(new Particle(50, 50));
 }
