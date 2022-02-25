@@ -39,10 +39,22 @@ canvas {
 }
 #name::before {
   background-color: rgb(63, 62, 62);
-  animation: typewriter 5s steps(14) forwards;
+  animation: typewriter 5s steps(14) 1s forwards;
+}
+
+#name::after {
+  width: 0.1em;
+  background: white;
+  animation: typewriter 5s steps(14) 1s forwards, blink 750ms steps(14) infinite;
 }
 @keyframes typewriter {
   to {
     left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
   }
 }
