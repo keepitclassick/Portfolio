@@ -5,12 +5,11 @@
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   display: grid;
   place-content: center;
   text-align: top;
-  background-color: rgb(63, 62, 62);
+  background-color: rgb(38, 15, 58);
 }
 
 canvas {
@@ -38,13 +37,13 @@ canvas {
   left: 0;
 }
 #name::before {
-  background-color: rgb(63, 62, 62);
+  background-color: rgb(38, 15, 58);
   animation: typewriter 5s steps(14) 1s forwards;
 }
 
 #name::after {
   width: 0.1em;
-  background: white;
+  background: rgb(255, 255, 255);
   animation: typewriter 5s steps(14) 1s forwards, blink 750ms steps(14) infinite;
 }
 @keyframes typewriter {
@@ -57,4 +56,32 @@ canvas {
   to {
     background: transparent;
   }
+}
+
+.menu {
+  text-align: center;
+  font-family: "Courier Prime";
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+.menu-item {
+  font-size: 60px;
+}
+
+#about {
+  height: 600px;
+  width: 200%;
+  background-color: rgb(157, 148, 160);
+}
+#skills {
+  height: 600px;
+  width: 200%;
+  background-color: rgb(96, 88, 99);
+}
+#projects {
+  height: 600px;
+  width: 200%;
+  background-color: rgb(157, 148, 160);
 }
