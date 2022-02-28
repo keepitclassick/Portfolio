@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,9 +9,10 @@
 body {
   margin: 0;
   display: grid;
-  place-content: center;
   text-align: top;
-  background-color: rgb(38, 15, 58);
+  background-image: url("https://wallpaper.dog/large/775047.jpg");
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 canvas {
@@ -18,26 +21,56 @@ canvas {
   left: 0;
 }
 
+#header {
+  border-radius: 30px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 80%;
+  background: radial-gradient(
+    ellipse farthest-corner at left top,
+    #ffffff 0%,
+    #ffffac 8%,
+    #d1b464 25%,
+    #5d4a1f 62.5%,
+    #5d4a1f 100%
+  );
+  z-index: -10;
+  box-shadow: 10px, 10px 10px 10px rgba(255, 255, 255, 0.753);
+  margin: auto;
+}
+
+#overlay {
+  z-index: -4;
+  border-radius: 30px;
+  align-self: center;
+  background-color: rgba(161, 127, 54, 0.185);
+  width: 80%;
+  height: 800px;
+  margin: auto;
+}
+
 #name {
-  color: rgb(255, 255, 255);
+  color: rgb(19, 18, 18);
   font-size: 80px;
-  font-family: "Courier Prime";
+  font-family: "Major Mono Display", monospace;
   position: relative;
-  width: max-content;
+  width: 100%;
   text-align: center;
 }
 
 #name::before,
 #name::after {
   content: "";
-  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
 }
+
 #name::before {
-  background-color: rgb(38, 15, 58);
+  background-color: rgb(142, 42, 189);
   animation: typewriter 5s steps(14) 1s forwards;
 }
 
@@ -61,7 +94,7 @@ canvas {
 .menu {
   text-align: center;
   font-family: "Courier Prime";
-  color: white;
+  color: #2e151b;
   background-color: transparent;
   position: relative;
 }
@@ -70,28 +103,12 @@ canvas {
   font-size: 60px;
 }
 
-#about {
-  height: 600px;
-  width: 200%;
-  background-color: rgb(157, 148, 160);
-}
-#skills {
-  height: 600px;
-  width: 200%;
-  background-color: rgb(96, 88, 99);
-}
-#projects {
-  height: 600px;
-  width: 200%;
-  background-color: rgb(157, 148, 160);
-}
-
-/h1 {
+h1 {
   font-family: verdana, sans-serif;
   font-weight: bold;
   text-align: center;
   position: relative;
-  top: -10px;
+  top: 0px;
 }
 
 a {
@@ -99,35 +116,38 @@ a {
 }
 
 #btn1 {
-  top: 0px;
-}
-
-#btn2 {
-  top: 100px;
-}
-
-#btn3 {
   top: 200px;
 }
 
+#btn2 {
+  top: 300px;
+}
+
+#btn3 {
+  top: 400px;
+}
+
+#btn4 {
+  top: 500px;
+}
+
 div.button {
-  background-color: rgb(157, 148, 160);
-  color: #2c3e50;
-  border: none;
-  border-radius: 30px, 10px;
+  background-color: rgba(255, 255, 255, 0.596);
+  color: black;
+  border: 5px solid black;
+  border-radius: 50px / 40px;
   width: 500px;
   height: 60px;
   position: fixed;
-  left: -435px;
+  left: -30%;
   transition: 0.7s ease;
 }
 
 div.button:hover {
   background-color: rgb(157, 148, 160);
   position: fixed;
-  left: 0;
-  width: 350px;
-  border-radius: 30px, 10px;
+  left: -5%;
+  width: 20%;
   box-shadow: 0px 5px 0px rgb(38, 15, 58);
 }
 

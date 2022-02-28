@@ -17,9 +17,8 @@ window.addEventListener("mousemove", function (e) {
   // console.log(mouse.x, mouse.y);
 });
 
-ctx.fillStyle = "white";
 ctx.font = "15px Verdana";
-ctx.fillText("Full-Stack Web Developer", 52, 35);
+ctx.fillText("Full-Stack Web Developer", 20, 35);
 
 const textCoords = ctx.getImageData(0, 0, 500, 500);
 
