@@ -180,9 +180,9 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+/* When moving the mouse over the submit button, change colour */
 input[type="submit"]:hover {
-  background-color: #222222;
+  background-color: #444343;
 }
 
 /* Add a background color and some padding around the form */
@@ -190,4 +190,9 @@ input[type="submit"]:hover {
   border-radius: 5px;
   background-color: transparent;
   padding: 20px;
+}
+
+#contact {
+  width: 70%;
+  margin: auto;
 }
