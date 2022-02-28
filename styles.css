@@ -4,15 +4,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Major Mono Display", monospace;
 }
 
 body {
   margin: 0;
   display: grid;
   text-align: top;
-  background-image: url("https://wallpaper.dog/large/775047.jpg");
-  background-repeat: repeat;
-  background-size: cover;
 }
 
 canvas {
@@ -42,6 +40,7 @@ canvas {
 }
 
 #overlay {
+  border-radius: 30px;
   align-self: center;
   background-color: rgba(161, 127, 54, 0.185);
   width: 80%;
@@ -168,6 +167,7 @@ textarea {
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
   resize: vertical;
+  font-family: "Major Mono Display", monospace;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -204,4 +204,5 @@ input[type="submit"]:hover {
 #skills-pic {
   width: 70%;
   border-radius: 30px;
+  margin-left: 15%;
 }
