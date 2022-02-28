@@ -36,14 +36,12 @@ canvas {
     #5d4a1f 62.5%,
     #5d4a1f 100%
   );
-  z-index: -10;
+
   box-shadow: 10px, 10px 10px 10px rgba(255, 255, 255, 0.753);
   margin: auto;
 }
 
 #overlay {
-  z-index: -4;
-  border-radius: 30px;
   align-self: center;
   background-color: rgba(161, 127, 54, 0.185);
   width: 80%;
@@ -104,11 +102,12 @@ canvas {
 }
 
 h1 {
-  font-family: verdana, sans-serif;
+  font-family: "Major Mono Display", monospace;
   font-weight: bold;
   text-align: center;
   position: relative;
   top: 0px;
+  z-index: 0;
 }
 
 a {
