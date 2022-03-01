@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Major+Mono+Display&family=Shizuru&display=swap");
 
 * {
   margin: 0;
@@ -11,38 +11,30 @@ body {
   margin: 0;
   display: grid;
   text-align: top;
+  background-image: url("https://spinaroundsounddj.com/wp-content/uploads/2015/08/geometric-bg-2.jpg");
 }
 
 #canvas1 {
   position: absolute;
   width: 100%;
   margin: auto;
+  z-index: 2;
 }
 
 #header {
-  border-radius: 30px;
   margin: 0;
   top: 0;
   left: 0;
   height: 200px;
-  width: 80%;
-  background: radial-gradient(
-    ellipse farthest-corner at left top,
-    #ffffff 0%,
-    #ffffac 8%,
-    #d1b464 25%,
-    #5d4a1f 62.5%,
-    #5d4a1f 100%
-  );
-
-  box-shadow: 10px, 10px 10px 10px rgba(255, 255, 255, 0.753);
+  width: 100%;
+  background: #4e3649;
   margin: auto;
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.589);
+  z-index: 1;
 }
 
 #overlay {
-  border-radius: 30px;
-  align-self: center;
-  background-color: rgba(161, 127, 54, 0.185);
+  background-color: #fffafa;
   width: 80%;
   height: max-content;
   margin: auto;
@@ -67,13 +59,14 @@ body {
 }
 
 #name::before {
-  background-color: rgb(142, 42, 189);
+  z-index: 10;
+  background-color: #4e3649;
   animation: typewriter 5s steps(14) 1s forwards;
 }
 
 #name::after {
+  background-color: white;
   width: 0.1em;
-  background: rgb(255, 255, 255);
   animation: typewriter 5s steps(14) 1s forwards, blink 750ms steps(14) infinite;
 }
 @keyframes typewriter {
@@ -88,25 +81,13 @@ body {
   }
 }
 
-.menu {
-  text-align: center;
-  font-family: "Courier Prime";
-  color: #2e151b;
-  background-color: transparent;
-  position: relative;
-}
-
-.menu-item {
-  font-size: 60px;
-}
-
 h1 {
   font-family: "Major Mono Display", monospace;
+  color: #4e3649;
   font-weight: bold;
   text-align: center;
   position: relative;
   top: 0px;
-  z-index: 0;
 }
 
 a {
@@ -114,31 +95,32 @@ a {
 }
 /*side nav button placement*/
 #btn1 {
-  top: 200px;
+  top: 25%;
 }
 
 #btn2 {
-  top: 300px;
+  top: 35%;
 }
 
 #btn3 {
-  top: 400px;
+  top: 45%;
 }
 
 #btn4 {
-  top: 500px;
+  top: 55%;
 }
 
 div.button {
   background-color: rgba(255, 255, 255, 0.596);
   color: black;
   border: 5px solid black;
-  border-radius: 50px / 40px;
+  border-radius: 10px / 5px;
   width: 500px;
   height: 60px;
   position: fixed;
   left: -30%;
   transition: 0.7s ease;
+  z-index: 3;
 }
 
 div.button:hover {
@@ -192,6 +174,10 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
+#about {
+  width: 70%;
+  margin: auto;
+}
 #contact {
   width: 70%;
   margin: auto;
@@ -200,9 +186,41 @@ input[type="submit"]:hover {
 #skills {
   margin: auto;
 }
+#projects {
+  width: 80%;
+  margin: auto;
+}
 
 #skills-pic {
-  width: 70%;
+  width: 80%;
   border-radius: 30px;
-  margin-left: 15%;
+  margin-left: 10%;
+}
+.card-title {
+  font-family: "Dosis", sans-serif;
+}
+.card-text {
+  background: transparent;
+  font-family: "Dosis", sans-serif;
+}
+.card-img-top {
+  height: 60%;
+}
+
+img.card-img-top:hover {
+  background-color: black;
+}
+.card {
+  border: 5px solid black;
+}
+p {
+  font-family: "Dosis", sans-serif;
+}
+
+#about-quote {
+  text-align: center;
+}
+
+#resume {
+  text-align: center;
 }
