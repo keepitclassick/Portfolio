@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Major+Mono+Display&family=Shizuru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dosis:wght@300&family=Inspiration&family=Major+Mono+Display&family=Shizuru&display=swap");
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ body {
   margin: 0;
   display: grid;
   text-align: top;
-  background-image: url("https://spinaroundsounddj.com/wp-content/uploads/2015/08/geometric-bg-2.jpg");
+  background-image: url("https://wewarriors.life/pics/i.pinimg.com/736x/58/fb/09/58fb09875f91777cc03b0cf2f46f2f47--temporary-wallpaper-gray-stripes.jpg");
 }
 
 #canvas1 {
@@ -29,7 +29,7 @@ body {
   width: 100%;
   background: #4e3649;
   margin: auto;
-  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.589);
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.589);
   z-index: 1;
 }
 
@@ -41,12 +41,13 @@ body {
 }
 
 #name {
-  color: black;
-  font-size: 4em;
-  font-family: "Major Mono Display", monospace;
+  color: rgb(255, 255, 255);
+  font-size: 7em;
+  font-family: "Inspiration", cursive;
   position: relative;
   width: 100%;
   text-align: center;
+  text-shadow: 2px 2px 2px black;
 }
 
 #name::before,
@@ -218,9 +219,5 @@ p {
 }
 
 #about-quote {
-  text-align: center;
-}
-
-#resume {
   text-align: center;
 }
