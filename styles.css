@@ -30,14 +30,6 @@ body {
   background: #4e3649;
   margin: auto;
   box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.589);
-  z-index: 1;
-}
-
-#overlay {
-  background-color: #fffafa;
-  width: 80%;
-  height: max-content;
-  margin: auto;
 }
 
 #name {
@@ -176,27 +168,34 @@ input[type="submit"]:hover {
 }
 
 #about {
-  width: 70%;
+  width: 80%;
+  background-color: #ffffff;
+  height: 30em;
+  position: relative;
   margin: auto;
+  z-index: 2;
 }
 #contact {
-  width: 70%;
   margin: auto;
+  background-color: white;
+  width: 100%;
 }
 
-#skills {
-  margin: auto;
-}
 #projects {
-  width: 80%;
   margin: auto;
+  background: #a29aac;
+  z-index: -3;
+  height: 55em;
+  width: 80%;
 }
 
 #skills-pic {
   width: 80%;
   border-radius: 30px;
   margin-left: 10%;
+  position: sticky;
 }
+
 .card-title {
   font-family: "Dosis", sans-serif;
 }
@@ -204,8 +203,9 @@ input[type="submit"]:hover {
   background: transparent;
   font-family: "Dosis", sans-serif;
 }
+
 .card-img-top {
-  height: 60%;
+  height: 80%;
 }
 
 img.card-img-top:hover {
@@ -220,4 +220,65 @@ p {
 
 #about-quote {
   text-align: center;
+}
+
+.curve {
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  bottom: 0;
+}
+
+.curve::before {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #ffffff;
+  transform: translate(45.6%, -42.2%);
+  z-index: 1;
+}
+
+.curve::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100% 50%;
+  width: 55%;
+  height: 100%;
+  background-color: #ffffff;
+  transform: translate(-0.1%, -60%);
+  z-index: 1;
+}
+
+#footer {
+  margin: 0;
+  bottom: 500px;
+  left: 0;
+  height: 200px;
+  background: #4e3649;
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.589);
+}
+.custom-shape-divider-top-1646166825 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 73%;
+  width: 90%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1646166825 svg {
+  position: relative;
+  display: block;
+  width: calc(90% + 1.3px);
+  height: 150px;
+  overflow: hidden;
+}
+
+.custom-shape-divider-top-1646166825 .shape-fill {
+  fill: #ffffff;
 }
