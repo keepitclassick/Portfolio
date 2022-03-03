@@ -18,7 +18,7 @@ window.addEventListener("mousemove", function (e) {
 });
 
 ctx.font = "15px Verdana";
-ctx.fillText("Full-Stack Web Developer", 20, 35);
+ctx.fillText("Full Stack Developer", 25, 35);
 
 const textCoords = ctx.getImageData(0, 0, 500, 500);
 
