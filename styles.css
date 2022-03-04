@@ -13,9 +13,10 @@ body {
   background-image: url("https://thumbs.dreamstime.com/b/monochrome-seamless-pattern-small-dots-texture-vector-polka-dot-circles-spots-simple-geometric-background-abstract-black-white-95681548.jpg");
 }
 #overlay {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   width: 90%;
   margin: 0 auto;
+  border: 5px solid black;
 }
 
 #canvas1 {
@@ -313,4 +314,9 @@ input[type="submit"]:hover {
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.footer-img {
+  width: 10%;
+  padding: 1vw;
 }
