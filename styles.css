@@ -12,9 +12,10 @@ body {
   text-align: top;
   background-image: url("https://thumbs.dreamstime.com/b/monochrome-seamless-pattern-small-dots-texture-vector-polka-dot-circles-spots-simple-geometric-background-abstract-black-white-95681548.jpg");
 }
+
 #overlay {
   background-color: rgb(255, 255, 255);
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   border: 5px solid black;
 }
@@ -163,7 +164,7 @@ input[type="submit"]:hover {
   z-index: -1;
 }
 #contact {
-  height: 75vh;
+  height: 80vh;
   margin: 1%;
   background-color: #ffffff;
   width: 95%;
@@ -177,22 +178,23 @@ input[type="submit"]:hover {
     0% 75%
   );
   z-index: 1;
-  border: 5px solid rgba(255, 255, 255, 0) #000;
+  border: 10px solid #000;
+  border-radius: 30px;
 }
 
 #projects {
   margin: auto;
   background: #ffffff;
-  height: 60vh;
+  height: 50vh;
   width: 99%;
   display: flex;
 }
 
-#skills-pic {
-  width: 90%;
+.skills-pic {
+  width: 50%;
+  height: 50%;
   border-radius: 30px;
   margin-right: 10%;
-  position: sticky;
 }
 
 #about-quote {
@@ -286,7 +288,7 @@ input[type="submit"]:hover {
   height: 100%;
   width: 70%;
   margin: auto;
-  z-index: -1;
+  border-radius: 30px;
 }
 
 #footer {
@@ -319,4 +321,24 @@ input[type="submit"]:hover {
 .footer-img {
   width: 10%;
   padding: 1vw;
+}
+
+#contact {
+  animation: bounce-in-right 2s ease;
+}
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
