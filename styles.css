@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dosis:wght@300&family=Inspiration&family=Knewave&family=Major+Mono+Display&family=Shizuru&display=swap");
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -156,13 +158,9 @@ input[type="submit"]:hover {
 }
 
 #skills {
-  width: 99%;
-  background-color: #080808;
-  height: 100vh;
-  position: relative;
   margin: auto;
-  z-index: -1;
 }
+
 #contact {
   height: 80vh;
   margin: 1%;
@@ -191,10 +189,11 @@ input[type="submit"]:hover {
 }
 
 .skills-pic {
-  width: 50%;
-  height: 50%;
-  border-radius: 30px;
-  margin-right: 10%;
+  width: 8%;
+  height: 8%;
+  margin-left: 1%;
+  margin-right: 1%;
+  animation: float 6s ease-in-out infinite;
 }
 
 #about-quote {
@@ -326,6 +325,7 @@ input[type="submit"]:hover {
 #contact {
   animation: bounce-in-right 2s ease;
 }
+
 @keyframes bounce-in-right {
   0% {
     opacity: 0;
@@ -340,5 +340,17 @@ input[type="submit"]:hover {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }
