@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dosis:wght@300&family=Inspiration&family=Knewave&family=Major+Mono+Display&family=Shizuru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dosis:wght@300&family=Inspiration&family=Knewave&family=Major+Mono+Display&family=Montserrat:wght@500&family=Shizuru&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -6,21 +7,21 @@ html {
 *,
 *:before,
 *:after {
-  margin: 0;
-  padding: 0;
   box-sizing: inherit;
 }
 
 body {
   margin: 0;
   align-items: center;
-  min-width: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   text-align: top;
-  background-image: url("https://thumbs.dreamstime.com/b/monochrome-seamless-pattern-small-dots-texture-vector-polka-dot-circles-spots-simple-geometric-background-abstract-black-white-95681548.jpg");
+  background-image: url("https://c1.wallpaperflare.com/preview/928/98/513/digital-art-galaxy-digital-space.jpg");
+  background-size: stretch;
 }
 
 #overlay {
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   width: 95%;
   margin: 0 auto;
 }
@@ -35,9 +36,9 @@ body {
   margin: 0;
   top: 0;
   left: 0;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
-  background: #000000;
+  background: black;
   margin: auto;
   box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 0.589);
 }
@@ -48,13 +49,13 @@ body {
   font-family: "Inspiration", cursive;
   position: relative;
   text-align: center;
-  text-shadow: 2px 2px 2px rgb(255, 0, 0);
+  text-shadow: 2px 2px 2px rgb(132, 0, 255);
   padding: 0;
 }
 
 h1 {
-  font-family: "Knewave", cursive;
-  color: #ee0a28;
+  font-family: "Major Mono Display", monospace;
+  color: #ffffff;
   font-weight: bold;
   text-align: center;
   position: relative;
@@ -72,7 +73,7 @@ textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   resize: vertical;
-  font-family: "Major Mono Display", monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -88,7 +89,7 @@ input[type="submit"] {
 
 /* When moving the mouse over the submit button, change colour */
 input[type="submit"]:hover {
-  background-color: #444343;
+  background-color: #814783;
 }
 
 /* Add a background color and some padding around the form */
@@ -99,23 +100,27 @@ input[type="submit"]:hover {
 }
 
 #home {
-  width: 99%;
+  width: 90%;
   height: max-content;
   background-color: rgb(255, 255, 255);
   margin: auto;
 }
 
 #about {
-  width: 99%;
-  background-color: #ffffff;
+  width: 90%;
+  background-color: transparent;
   height: max-content;
   position: relative;
   margin: auto;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
 #skills {
-  margin-left: 5%;
-  margin-right: 5%;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  border-radius: 10%;
 }
 
 #contact {
@@ -141,10 +146,12 @@ input[type="submit"]:hover {
 
 #projects {
   margin: auto;
-  background: #ffffff;
-  height: 50vh;
-  width: 99%;
+  background: transparent;
+  height: 100vh;
+  width: 90%;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .skills-pic {
@@ -153,6 +160,7 @@ input[type="submit"]:hover {
   margin-left: 1%;
   margin-right: 1%;
   animation: float 6s ease-in-out infinite;
+  flex-wrap: wrap;
 }
 
 #about-quote {
@@ -178,19 +186,17 @@ input[type="submit"]:hover {
 
 .container-pro {
   position: relative;
-  width: 90vw;
+  width: 30%;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .container-pro .box {
   position: relative;
   overflow: hidden;
   width: 100%;
+  margin: 1%;
   border: 2px solid black;
   transition: 0.5s;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .container-pro .box:hover {
@@ -210,6 +216,8 @@ input[type="submit"]:hover {
   height: 100%;
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
+  flex-direction: row;
 }
 
 .container-pro .box .imgBx:before {
@@ -219,7 +227,7 @@ input[type="submit"]:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(180deg, #f00, #000);
+  background: linear-gradient(180deg, rgb(44, 20, 109), rgb(255, 255, 255));
   mix-blend-mode: multiply;
   opacity: 0;
   transition: 0.5s;
@@ -232,10 +240,11 @@ input[type="submit"]:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  flex-direction: row;
 }
 
 #footer {
-  height: 200px;
+  height: 10%;
   width: 100%;
   background-color: black;
   position: sticky;
@@ -264,10 +273,10 @@ input[type="submit"]:hover {
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: rgb(0, 0, 0); /* Set a background color */
   color: white; /* Text color */
+  border: 1 px solid white;
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
@@ -310,4 +319,24 @@ input[type="submit"]:hover {
   100% {
     transform: translatey(0px);
   }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 80%;
+  z-index: -1;
+}
+
+#logo {
+  width: 10vw;
+  height: 15vh;
+  position: absolute;
+}
+
+#sketch {
+  max-width: 50vw;
+  max-height: 50vh;
 }

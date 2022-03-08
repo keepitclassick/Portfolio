@@ -15,17 +15,30 @@
 
   <body>
     <canvas id="canvas1"></canvas>
-    <div id="header">
-      
-      <h1 id="name">Kayla Johnston</h1>
-    
-    </div>
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
+      <a class="navbar-brand" href="#"><img width="100" height="100" class="d-inline-block align-top" src="assets/Untitled design (4).png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#about">About</a>
+          <a class="nav-item nav-link" href="#skills">Skills</a>
+          <a class="nav-item nav-link" href="#projects">Projects</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+
+        </div>
+      </div>
+    </nav>
+
     <div id="overlay">
       <div id="about">
         <div class="cols">
           
           <div class="col fade-in">
-        <h1>Hi, I'm Kayla</h1>
+            <h1 id="name">Hi, I'm Kayla</h1>
         <p>Like many, the pandemic <b>inspired</b> me to seek new knowledge and skills. In my free time I would study html and css which would soon lead to the <b>most difficult</b> and rewarding decision of my life.</p>
        <h4 id="about-quote">I left my job to pursue my passion.</h4>
         <p>Despite the fear of the unknown, <b>I persevered</b>. After over 600 hours of intensive study day in and day out, I received my web development diploma. 
@@ -33,14 +46,14 @@
     </div>
     <div class="col fade-in">         
       
-          <br><br><img src="./assets/sketch.png" width="70%">
+          <br><br><img src="assets/linesrm Post 1080x1080 px.png" id="sketch">
          
         </div>
         
       </div>
     </div> 
       <div id="skills">
-        <h1>Skills</h1>
+        <h1 style="color: black">Skills</h1>
        
       <img src="assets/1_hAAm71eC0mIg3RIA6S4-DQ.png" class="skills-pic"></img>
       <img src="assets/1_QR2SBNwG75LyY5uwqWpN3A.png" class="skills-pic"></img>
@@ -51,8 +64,7 @@
       <img src="assets/Bootstrap_logo.svg.png" class="skills-pic"></img>
       <img src="assets/beginners-guide-to-using-express-js-and-node-js-framework.png" class="skills-pic"></img>
       <img src="assets/javascript-logo.png" class="skills-pic"></img>
-   
-      
+
       <img src="assets/jest.png" class="skills-pic"></img>
       <img src="assets/logo_ogp.png" class="skills-pic"></img>
       <img src="assets/q1cwqhahz7jbtfzalznd.jpeg" class="skills-pic"></img>
@@ -135,6 +147,10 @@
   <img class="footer-img" src="./assets/4.png">
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 </div>
+
+<video autoplay muted loop id="myVideo">
+  <source src="assets/background.mp4" type="video/mp4">
+</video>
     <script src="particles.js"></script>
     <script src="nav.js"></script>
     <script src="observer.js"></script>
