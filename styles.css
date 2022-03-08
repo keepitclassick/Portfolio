@@ -142,12 +142,12 @@ input[type="submit"]:hover {
 #projects {
   margin: auto;
   background: transparent;
-  width: 95vw;
+  width: 90vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   height: 60vh;
-  padding-bottom: 20vh;
+  padding-bottom: 30vh;
 }
 
 #project-header {
@@ -162,7 +162,7 @@ input[type="submit"]:hover {
   margin-right: 5%;
   margin-top: 5%;
   animation: float 6s ease-in-out infinite;
-  flex-wrap: wrap;
+
   background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
@@ -297,7 +297,8 @@ input[type="submit"]:hover {
 
 .footer-img {
   width: 7%;
-  padding: 1vw;
+  padding: 0.5%;
+  margin: none;
 }
 
 @keyframes bounce-in-right {
@@ -327,16 +328,6 @@ input[type="submit"]:hover {
   100% {
     transform: translatey(0px);
   }
-}
-
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 80%;
-  z-index: -1;
-  display: none;
 }
 
 #logo {

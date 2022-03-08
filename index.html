@@ -28,7 +28,6 @@
           <a class="nav-item nav-link" href="#skills">Skills</a>
           <a class="nav-item nav-link" href="#project-header">Projects</a>
           <a class="nav-item nav-link" href="#contact">Contact</a>
-
         </div>
       </div>
     </nav>
@@ -131,16 +130,16 @@
 <div class="contact-outline">
  <div id="contact">
         <div class="container">
-        <form action="mailto:kayla_johnston@icloud.com">
+        <form action= "https://formsubmit.co/kayla_johnston@icloud.com" method="POST" >
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
         
             <label for="email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Your email">
-        
+            <input type="text" id="email" name="email" placeholder="Your email" required />
+            <input type="hidden" name="_autoresponse" value="Thanks for your message! Please allow up to 24 hours for a response. If this is urgent, please feel free to DM me on LinkedIn">
             <label for="subject">Message</label>
-            <textarea id="message" name="Message placeholder="Write something.." style="height:200px"></textarea>
-        
+            <textarea id="message" name="Message" placeholder="Write something.." style="height:200px" required></textarea>
+            <input type="hidden" name="_subject" value="Website Inquiry">
             <input type="submit" value="Submit" onclick="sendMessage();">
         
           </form>
@@ -152,16 +151,12 @@
 </div> 
 </div>
 <div id="footer">
-  <img class="footer-img" src="./assets/1.png">
-  <img class="footer-img" src="./assets/3.png">
-  <img class="footer-img" src="./assets/2.png">
-  <img class="footer-img" src="./assets/4.png">
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <a href="https://www.linkedin.com/in/kayla-johnston"><img class="footer-img" src="./assets/1.png"></a>
+  <a href="tel:519-401-8452"><img class="footer-img" src="./assets/3.png"></a> 
+  <a href="https://www.facebook.com/xkayjohnstonx"><img class="footer-img" src="./assets/2.png"></a>
+  <a href="https://github.com/keepitclassick"><img class="footer-img" src="assets/kisspng-computer-icons-logo-portable-network-graphics-clip-icons-for-free-iconza-circle-social-5b7fe46b4ec817.2080142615351082033227.png"></img>
 </div>
 
-<video autoplay muted loop id="myVideo">
-  <source src="assets/background.mp4" type="video/mp4">
-</video>
     <script src="particles.js"></script>
     <script src="nav.js"></script>
     <script src="observer.js"></script>
