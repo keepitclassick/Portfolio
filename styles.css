@@ -41,7 +41,7 @@ body {
   position: relative;
   text-align: center;
   text-shadow: 2px 2px 2px rgb(132, 0, 255);
-  padding: 20vh;
+  padding-top: 20vh;
 }
 
 h1 {
@@ -51,7 +51,6 @@ h1 {
   text-align: center;
   position: relative;
   top: 0px;
-  padding: 3%;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -95,7 +94,7 @@ input[type="submit"]:hover {
   height: max-content;
   background-color: transparent;
   margin: auto;
-  height: 100vh;
+  height: 80vh;
   padding-top: 20vh;
 }
 
@@ -107,7 +106,7 @@ input[type="submit"]:hover {
   margin: auto;
   color: white;
   font-family: "Montserrat", sans-serif;
-  padding-top: 20vh;
+  padding-top: 40vh;
 }
 
 #skills {
@@ -120,7 +119,7 @@ input[type="submit"]:hover {
 }
 
 #contact {
-  height: 80vh;
+  height: 70vh;
   margin: 1%;
   background-color: #ffffff;
   width: 95%;
@@ -138,27 +137,35 @@ input[type="submit"]:hover {
   border-radius: 30px;
   animation: bounce-in-right 2s ease;
   box-shadow: 5px 10px #888888;
-  padding-top: 20vh;
 }
 
 #projects {
   margin: auto;
   background: transparent;
-  padding-top: 20vh;
-  width: 100%;
+  width: 95vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 80vh;
+  height: 60vh;
+  padding-bottom: 20vh;
+}
+
+#project-header {
+  padding-top: 30vh;
 }
 
 .skills-pic {
-  width: 9%;
-  height: 10%;
-  margin-left: 1%;
-  margin-right: 1%;
+  width: 10vw;
+  height: 10vh;
+  min-width: 10vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5%;
   animation: float 6s ease-in-out infinite;
   flex-wrap: wrap;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
 }
 
 #about-quote {
