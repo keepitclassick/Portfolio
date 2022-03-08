@@ -93,31 +93,34 @@ input[type="submit"]:hover {
 #home {
   width: 90%;
   height: max-content;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
   margin: auto;
-  padding-top: 10vh;
+  height: 100vh;
+  padding-top: 20vh;
 }
 
 #about {
   width: 90%;
+  height: 80vh;
   background-color: transparent;
-  height: max-content;
   position: relative;
   margin: auto;
   color: white;
   font-family: "Montserrat", sans-serif;
-  padding-top: 15vh;
+  padding-top: 20vh;
 }
 
 #skills {
   background-color: transparent;
   width: 90%;
+  height: 80vh;
   margin: auto;
   border-radius: 10%;
+  padding-top: 20vh;
 }
 
 #contact {
-  height: 70vh;
+  height: 80vh;
   margin: 1%;
   background-color: #ffffff;
   width: 95%;
@@ -135,16 +138,18 @@ input[type="submit"]:hover {
   border-radius: 30px;
   animation: bounce-in-right 2s ease;
   box-shadow: 5px 10px #888888;
+  padding-top: 20vh;
 }
 
 #projects {
   margin: auto;
   background: transparent;
-  height: 50vh;
+  padding-top: 20vh;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  height: 80vh;
 }
 
 .skills-pic {
