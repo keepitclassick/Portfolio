@@ -146,7 +146,7 @@ input[type="submit"]:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 60vh;
+  height: 80vh;
   padding-bottom: 30vh;
 }
 
