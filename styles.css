@@ -57,15 +57,16 @@ h1 {
 input[type="text"],
 select,
 textarea {
-  width: 100%;
+  width: 80%;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 20px;
   box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
   resize: vertical;
   font-family: "Montserrat", sans-serif;
 }
-
+input[type="text"] {
+  margin: 0;
+}
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
   background-color: #0a0a0a;
@@ -74,7 +75,7 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /* When moving the mouse over the submit button, change colour */
@@ -138,6 +139,22 @@ input[type="submit"]:hover {
   animation: bounce-in-right 2s ease;
   box-shadow: 5px 10px #888888;
 }
+#contact-outline {
+  background-color: rgb(0, 0, 0);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0 74%
+  );
+  height: 100%;
+  width: 70%;
+  margin: auto;
+  border-radius: 30px;
+}
 
 #projects {
   margin: auto;
@@ -151,18 +168,17 @@ input[type="submit"]:hover {
 }
 
 #project-header {
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 
 .skills-pic {
-  width: 10vw;
+  width: 20vw;
   height: 10vh;
   min-width: 10vw;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 1%;
+  margin-right: 1%;
   margin-top: 5%;
   animation: float 6s ease-in-out infinite;
-
   background-color: white;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
@@ -232,7 +248,7 @@ input[type="submit"]:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: linear-gradient(180deg, rgb(44, 20, 109), rgb(255, 255, 255));
+  background: linear-gradient(180deg, rgb(255, 255, 255), rgb(73, 51, 153));
   mix-blend-mode: multiply;
   opacity: 0;
   transition: 0.5s;
@@ -248,31 +264,39 @@ input[type="submit"]:hover {
   flex-direction: row;
 }
 
+.img-txt {
+  overflow: hidden;
+  padding: 5px 15px;
+  margin-bottom: 5%;
+  z-index: 3;
+  transform: translateX(-110%);
+  transition: all 0.5s ease;
+  position: absolute;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  border-left: 3px solid #fff;
+  border-radius: 15px 0 0 15px;
+  color: #fff;
+  opacity: 0;
+}
+.container-pro .box:hover .img-txt {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.img-txt:hover .img-txt {
+  transform: translateY(0);
+}
+
 #footer {
-  height: 10%;
+  height: 10vh;
   width: 100%;
   background-color: black;
   position: sticky;
   bottom: 0;
   left: 0;
   z-index: 98;
-}
-
-.contact-outline {
-  background-color: rgb(0, 0, 0);
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0 74%
-  );
-  height: 100%;
-  width: 70%;
-  margin: auto;
-  border-radius: 30px;
 }
 
 #myBtn {
@@ -296,7 +320,7 @@ input[type="submit"]:hover {
 }
 
 .footer-img {
-  width: 7%;
+  width: 5%;
   padding: 0.5%;
   margin: none;
 }
@@ -340,4 +364,9 @@ input[type="submit"]:hover {
   top: 10;
   max-width: 50vw;
   max-height: 50vh;
+}
+
+#message {
+  text-align: left;
+  margin: auto;
 }
