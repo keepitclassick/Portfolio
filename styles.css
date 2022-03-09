@@ -112,21 +112,21 @@ input[type="submit"]:hover {
 
 #skills {
   background-color: transparent;
-  width: 99%;
+  width: 90%;
   height: 80vh;
-  margin: auto;
   border-radius: 10%;
   padding-top: 20vh;
+  margin: auto;
 }
 
 .skills-pic {
   width: 10vw;
   height: 10vh;
-  min-width: 15vw;
+  min-width: 10vw;
   min-height: 10vh;
   margin-left: 1%;
   margin-right: 1%;
-  margin-top: 5%;
+  margin-top: 1%;
   animation: float 6s ease-in-out infinite;
   background-color: white;
   border-radius: 10px;
@@ -153,6 +153,7 @@ input[type="submit"]:hover {
   animation: bounce-in-right 2s ease;
   box-shadow: 5px 10px #888888;
 }
+
 #contact-outline {
   background-color: rgb(0, 0, 0);
   clip-path: polygon(
@@ -379,6 +380,8 @@ input[type="submit"]:hover {
 }
 
 #sketch {
+  width: 50vw;
+  height: 50vh;
   top: 10;
   max-width: 50vw;
   max-height: 50vh;
@@ -387,4 +390,45 @@ input[type="submit"]:hover {
 #message {
   text-align: left;
   margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  #name {
+    font-size: 4em;
+    padding-top: 10vh;
+  }
+
+  #about {
+    padding-bottom: 400px;
+    font-size: 0.75em;
+  }
+
+  #footer {
+    height: 100px;
+  }
+
+  .footer-img {
+    width: 10%;
+    padding: 0.5%;
+    margin: none;
+  }
+
+  #skills {
+    padding-top: 20vh;
+    padding-left: 5vw;
+    text-align: center;
+  }
+  .skills-pic {
+    width: 20vw;
+    height: 10vh;
+    min-width: 20vw;
+    min-height: 10vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+  }
+
+  .img-txt h3 {
+    font-size: 0.75em;
+  }
 }
