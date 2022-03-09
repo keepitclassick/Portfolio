@@ -279,7 +279,14 @@ input[type="submit"]:hover {
   border-radius: 15px 0 0 15px;
   color: #fff;
   opacity: 0;
+  font-family: "Major Mono Display", monospace;
 }
+
+.git-btn {
+  width: 1%;
+  height: 1%;
+}
+
 .container-pro .box:hover .img-txt {
   opacity: 1;
   transform: translateX(0);
