@@ -197,6 +197,7 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
+/* create two columns and create a fade in effect on scroll */
 .cols {
   display: flex;
 }
@@ -214,6 +215,7 @@ input[type="submit"]:hover {
   opacity: 1;
 }
 
+/*create grid of projects that shows a gradient on hover and slides in the name of the project */
 .container-pro {
   position: relative;
   width: 33%;
@@ -455,5 +457,41 @@ input[type="submit"]:hover {
     100% {
       transform: translatey(-30px);
     }
+  }
+
+  #contact {
+    padding-top: none;
+    padding-bottom: 20vh;
+  }
+  #contact-form {
+    height: 40vh;
+    margin: auto;
+    background-color: #ffffff;
+    width: 95%;
+    z-index: 1;
+  }
+
+  #contact-outline {
+    height: 60vh;
+    background-color: transparent;
+  }
+
+  #myBtn {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+  }
+  textarea#message .input {
+    height: 100px;
+  }
+
+  input[type="submit"] {
+    margin-left: 35%;
   }
 }
