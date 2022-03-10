@@ -405,12 +405,13 @@ input[type="submit"]:hover {
   }
 
   #about {
-    padding-bottom: 400px;
+    padding-top: none;
+    padding-bottom: 20vh;
     font-size: 0.75em;
   }
 
   #footer {
-    height: 100px;
+    height: 75px;
   }
 
   .footer-img {
@@ -454,9 +455,5 @@ input[type="submit"]:hover {
     100% {
       transform: translatey(-30px);
     }
-  }
-
-  #about {
-    padding-top: none;
   }
 }
