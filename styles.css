@@ -424,7 +424,6 @@ input[type="submit"]:hover {
 
   #skills {
     padding-top: 20vh;
-    padding-left: 5vw;
     text-align: center;
   }
   .skills-pic {
@@ -464,15 +463,16 @@ input[type="submit"]:hover {
     padding-bottom: 20vh;
   }
   #contact-form {
-    height: 40vh;
+    height: 60vh;
     margin: auto;
     background-color: #ffffff;
-    width: 95%;
+    width: 100%;
     z-index: 1;
   }
 
   #contact-outline {
     height: 60vh;
+    width: 100%;
     background-color: transparent;
   }
 
@@ -488,10 +488,11 @@ input[type="submit"]:hover {
     border-radius: 20px;
   }
   textarea#message .input {
-    height: 100px;
+    height: 10%;
   }
 
   input[type="submit"] {
     margin-left: 35%;
+    padding: none;
   }
 }
