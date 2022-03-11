@@ -89,7 +89,7 @@ input[type="submit"]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.form-container {
   border-radius: 5px;
   background-color: transparent;
   padding: 0px;
@@ -141,6 +141,7 @@ input[type="submit"]:hover {
 #contact {
   padding-top: 20vh;
 }
+
 #contact-form {
   height: 70vh;
   margin: 1%;
@@ -335,15 +336,14 @@ input[type="submit"]:hover {
   outline: none; /* Remove outline */
   background-color: rgb(0, 0, 0); /* Set a background color */
   color: white; /* Text color */
-  border: 1 px solid white;
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
+  padding: 10px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: rgb(68, 68, 68); /* Add a dark-grey background on hover */
 }
 
 .footer-img {
@@ -398,6 +398,55 @@ input[type="submit"]:hover {
 #message {
   text-align: left;
   margin: auto;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+a.nav-item {
+  list-style: none;
+  margin: 10px;
+  color: #eee;
+}
+
+a.nav-item .active {
+  color: rgb(137, 10, 168);
+}
+
+.navbar-dark .navbar-toggler {
+  color: transparent !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+.center {
+  top: 40;
+  right: 0;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50px;
+}
+
+.center:before,
+.center:after,
+.center div {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 6px;
+  border-radius: 3px;
+  margin: 7px 0;
+  transition: 0.5s;
+}
+
+.center:hover:before {
+  transform: translateY(12px) rotate(135deg);
+}
+.center:hover:after {
+  transform: translateY(-12px) rotate(-135deg);
+}
+.center:hover div {
+  transform: scale(0);
 }
 
 @media screen and (max-width: 992px) {
