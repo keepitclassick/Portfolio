@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dosis:wght@300&family=Inspiration&family=Knewave&family=Major+Mono+Display&family=Montserrat:wght@500&family=Shizuru&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dosis:wght@300&family=Inspiration&family=Knewave&family=Major+Mono+Display&family=Montserrat:wght@500&family=Shizuru&family=Titillium+Web:wght@300&display=swap");
 
 html {
   box-sizing: border-box;
@@ -9,6 +9,7 @@ html {
 *:after {
   box-sizing: inherit;
   overflow: visible;
+  font-family: "Titillium Web", sans-serif;
 }
 
 body {
@@ -554,6 +555,7 @@ a.nav-item .active {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(110, 15, 106, 0.699);
+  font-family: "Titillium Web", sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
