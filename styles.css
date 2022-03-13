@@ -451,7 +451,7 @@ a.nav-item .active {
   transform: scale(0);
 }
 
-@media screen and (max-width: 992px) and (min-width: 414px) {
+@media screen and (max-width: 992px) {
   #name {
     font-size: 4em;
     padding-top: 10vh;
