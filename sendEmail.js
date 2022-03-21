@@ -7,5 +7,5 @@ function sendEmail() {
     From: document.getElementById("email").value,
     Subject: "New Website Inquiry",
     Body: document.getElementById("message").value,
-  }).then((message) => console.log(message));
+  }).then((message) => alert(message));
 }
