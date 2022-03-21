@@ -139,16 +139,15 @@ form textarea {
   border-radius: 10px;
 }
 form button {
-  padding: 15px;
+  padding: 10px;
   background: #b882b9;
-
   font-size: 18px;
   border: 0;
   cursor: pointer;
   outline: none;
   width: 150px;
   margin: 20px auto 0;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 #projects {

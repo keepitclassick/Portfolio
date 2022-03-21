@@ -154,20 +154,18 @@
       <div id="contact">
         <h1>Contact</h1>
         <br>
-      <div id="contact-outline">
-        <div id="contact-form">
+     
           <div class="form-container">
-            <form >
+            <form onsubmit="()=>{sendEmail(); reset(); return false}">
               <br><label for="fname">Your Name</label><br>
               <input class="input" type="text" id="fname" name="firstname" placeholder="Your name.." required />
               <br><label for="email">Email</label><br>
               <input class="input" type="text" id="email" name="email" placeholder="Your email" required />
               <br><label for="subject">Message</label><br>
               <textarea class="input" id="message" name="Message" placeholder="Write something.." required></textarea>        
-          <button type="submit">Send</button>
+              <button type="submit">Send</button>
             </form>
-          </div>
-        </div>
+       
       </div>
     </div>
   </div> 
@@ -185,6 +183,8 @@
     <script src="nav.js"></script>
     <script src="observer.js"></script>
     <script src="scroll.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="sendEmail.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 </html>
