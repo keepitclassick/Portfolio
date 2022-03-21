@@ -112,7 +112,7 @@ h1 {
 }
 .form-container {
   width: 100%;
-  height: 100vh;
+  height: max-content;
   background: transparent;
   display: flex;
   align-items: center;
@@ -124,7 +124,7 @@ form {
   flex-direction: column;
   padding: 2vw 4vw;
   width: 80%;
-  max-width: 600px;
+  max-width: 500px;
   border-radius: 10px;
   font-family: "Titillium Web", sans-serif;
   color: white;
@@ -133,11 +133,12 @@ form input,
 form textarea {
   border: 0;
   margin: 10px 0;
-  padding: 1vh;
+  padding: 1px;
   outline: none;
   background: white;
   border-radius: 10px;
 }
+
 form button {
   padding: 10px;
   background: #b882b9;
