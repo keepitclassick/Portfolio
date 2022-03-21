@@ -64,43 +64,6 @@ h1 {
   top: 0px;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type="text"],
-select,
-textarea {
-  width: 80%;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  resize: vertical;
-  font-family: "Montserrat", sans-serif;
-}
-input[type="text"] {
-  margin: 0;
-}
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  background-color: #0a0a0a;
-  color: rgb(255, 255, 255);
-  padding: 10px 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: auto;
-}
-
-/* When moving the mouse over the submit button, change colour */
-input[type="submit"]:hover {
-  background-color: #814783;
-}
-
-/* Add a background color and some padding around the form */
-.form-container {
-  border-radius: 5px;
-  background-color: transparent;
-  padding: 0px;
-}
-
 #home {
   width: 90%;
   height: max-content;
@@ -147,43 +110,45 @@ input[type="submit"]:hover {
 #contact {
   padding-top: 20vh;
 }
-
-#contact-form {
-  height: 70vh;
-  margin: 1%;
-  background-color: #ffffff;
-  width: 95%;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0% 75%
-  );
-  z-index: 1;
-  border: 10px solid #000;
-  border-radius: 30px;
-  animation: bounce-in-right 2s ease;
-  box-shadow: 5px 10px #888888;
+.form-container {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+form {
+  background-color: #452246;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
+}
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 1vh;
+  outline: none;
+  background: white;
+  border-radius: 10px;
+}
+form button {
+  padding: 15px;
+  background: #b882b9;
 
-#contact-outline {
-  background-color: transparent;
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% 75%,
-    75% 75%,
-    75% 100%,
-    50% 75%,
-    0 74%
-  );
-  height: 100%;
-  width: 70%;
-  margin: auto;
-  border-radius: 30px;
+  font-size: 18px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 10px;
 }
 
 #projects {
@@ -326,32 +291,33 @@ input[type="submit"]:hover {
 #footer {
   height: 10vh;
   width: 100%;
-  background-color: black;
+  background-color: transparent;
   position: sticky;
   bottom: 0;
   left: 0;
   z-index: 98;
 }
 
+/*hide and style button that takes you to the top*/
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  bottom: 20px;
+  right: 30px;
   z-index: 101; /* Make sure it does not overlap */
-  outline: none; /* Remove outline */
-  background-color: rgb(0, 0, 0); /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  outline: none;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
 #myBtn:hover {
   background-color: rgb(68, 68, 68); /* Add a dark-grey background on hover */
 }
 
+/*resize social media/contact buttons*/
 .footer-img {
   width: 5%;
   padding: 0.5%;
@@ -395,15 +361,10 @@ input[type="submit"]:hover {
 
 #sketch {
   width: 100%;
-  height: 60%;
+  height: 80%;
   top: 10;
-  max-width: 100%;
-  max-height: 60%;
-}
-
-#message {
-  text-align: left;
-  margin: auto;
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 .navbar-nav {
@@ -454,6 +415,13 @@ a.nav-item .active {
 .center:hover div {
   transform: scale(0);
 }
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: "Titillium Web", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*media queries begin*/
 @media screen and (max-width: 590px) {
   .skills-pic {
     width: 10vw;
@@ -462,6 +430,7 @@ a.nav-item .active {
     min-height: 10vh;
   }
 }
+
 @media screen and (max-width: 992px) {
   #name {
     font-size: 5em;
@@ -469,8 +438,8 @@ a.nav-item .active {
   }
 
   #sketch {
-    width: 80vw;
-    height: 80vh;
+    width: 80%;
+    height: 80%;
     top: 10;
   }
 
@@ -482,12 +451,6 @@ a.nav-item .active {
 
   #footer {
     height: 75px;
-  }
-
-  .footer-img {
-    width: 10%;
-    padding: 0.5%;
-    margin: none;
   }
 
   #skills {
@@ -530,43 +493,8 @@ a.nav-item .active {
     padding-top: none;
     padding-bottom: 20vh;
   }
-  #contact-form {
-    height: 60vh;
-    margin: auto;
-    background-color: #ffffff;
-    width: 100%;
-    z-index: 1;
-  }
-
-  #contact-outline {
-    height: 60vh;
-    width: 100%;
-    background-color: transparent;
-  }
 
   #myBtn {
     padding: 10px;
   }
-
-  input[type="text"],
-  select,
-  textarea {
-    width: 100%;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 20px;
-  }
-  textarea#message .input {
-    height: 10%;
-  }
-
-  input[type="submit"] {
-    margin-left: 35%;
-    padding: none;
-  }
-}
-
-.navbar-dark .navbar-nav .nav-link {
-  font-family: "Titillium Web", sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
 }
