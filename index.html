@@ -156,15 +156,18 @@
         <br>
      
           <div class="form-container">
-            <form onsubmit="()=>{sendEmail(); reset(); return false}">
+            <form action= "https://formsubmit.co/e7c0872f282c1ddb43fd7b0d555f3ce2" method="POST" >
               <br><label for="fname">Your Name</label><br>
               <input class="input" type="text" id="fname" name="firstname" placeholder="Your name.." required />
               <br><label for="email">Email</label><br>
               <input class="input" type="text" id="email" name="email" placeholder="Your email" required />
+              <input type="hidden" name="_autoresponse" value="Thanks for your message! Please allow up to 24 hours for a response. If this is urgent, please feel free to DM me on LinkedIn">
               <br><label for="subject">Message</label><br>
-              <textarea class="input" id="message" name="Message" placeholder="Write something.." required></textarea>        
-              <button type="submit">Send</button>
-            </form>
+              <textarea class="input" id="message" name="Message" placeholder="Write something.." required></textarea>
+              <input type="hidden" name="_subject" value="Website Inquiry">
+              <input type="hidden" name="_next" value="https://keepitclassick.github.io/Portfolio/">
+              <br> <button type="submit" value="Submit">Send</button><br>
+          </form>
        
       </div>
     </div>
@@ -184,7 +187,23 @@
     <script src="observer.js"></script>
     <script src="scroll.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="sendEmail.js"></script>
+    <script>function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "keepitclassick@gmail.com",
+        Password: "Toodles52",
+        To: "keepitclassick@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: "New Website Inquiry",
+        Body:
+          "name:" +
+          document.getElementById("fname").value +
+          "<br> email:" +
+          document.getElementById("email").value +
+          "<br>message:" +
+          document.getElementById("message").value,
+      }).then((message) => alert(message));
+    }</script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 
 </html>
