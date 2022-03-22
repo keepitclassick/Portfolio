@@ -262,13 +262,13 @@ form button:hover {
   bottom: 5%;
   border-left: 3px solid #fff;
   border-radius: 15px 0 0 15px;
-  color: #fff;
+
   opacity: 0;
   font-family: "Major Mono Display", monospace;
 }
 
 .img-txt h3 {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: "Major Mono Display", monospace;
 }
 
@@ -289,6 +289,12 @@ form button:hover {
 
 .img-txt:hover .img-txt {
   transform: translateY(0);
+}
+
+.github-btn {
+  border-radius: 10px;
+  padding: 5px;
+  border: 10px solid rgba(104, 104, 104, 0.137);
 }
 
 #footer {
