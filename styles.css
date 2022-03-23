@@ -18,7 +18,7 @@ body {
   max-width: 100vw;
   max-height: 100vh;
   text-align: top;
-  background-image: url("../assets/digital-art-galaxy-digital-space.jpeg");
+  background-image: url("./assets/digital-art-galaxy-digital-space.jpeg");
   background-size: 100% 100%;
   background-attachment: fixed;
 }
