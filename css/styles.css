@@ -18,7 +18,7 @@ body {
   max-width: 100vw;
   max-height: 100vh;
   text-align: top;
-  background-image: url("assets/digital-art-galaxy-digital-space.jpeg");
+  background-image: url("../assets/digital-art-galaxy-digital-space.jpeg");
   background-size: 100% 100%;
   background-attachment: fixed;
 }
@@ -80,6 +80,7 @@ h1 {
   position: relative;
   margin: auto;
   color: white;
+  text-shadow: 2px 2px #000;
   font-family: "Montserrat", sans-serif;
   padding-top: 40vh;
 }
@@ -91,6 +92,32 @@ h1 {
 
   padding-top: 20vh;
   margin: auto;
+}
+
+.column-left {
+  float: left;
+  width: 33.333%;
+  background-color: white;
+  text-align: center;
+  height: 40vh;
+}
+.column-right {
+  float: right;
+  width: 33.333%;
+  background-color: #b882b9;
+  text-align: center;
+  height: 40vh;
+}
+.column-center {
+  display: inline-block;
+  width: 33.333%;
+  background-color: #452246;
+  text-align: center;
+  height: 40vh;
+}
+h2 {
+  font-family: "Major Mono Display", monospace;
+  background-color: #000;
 }
 
 .skills-pic {
@@ -110,6 +137,7 @@ h1 {
 #contact {
   padding-top: 20vh;
 }
+
 .form-container {
   width: 100%;
   height: max-content;
@@ -118,6 +146,7 @@ h1 {
   align-items: center;
   justify-content: center;
 }
+
 form {
   background-color: #53465367;
   border: 5px solid #452246;
@@ -129,6 +158,7 @@ form {
   border-radius: 10px;
   font-family: "Titillium Web", sans-serif;
   color: white;
+  text-shadow: 2px 2px #000;
 }
 form input,
 form textarea {
@@ -172,7 +202,7 @@ form button:hover {
   text-align: center;
 }
 
-/* create two columns and create a fade in effect on scroll */
+/* create two columns and create a fade in effect on scroll for home area*/
 .cols {
   display: flex;
 }
@@ -260,9 +290,6 @@ form button:hover {
   left: 5%;
   right: 5%;
   bottom: 5%;
-  border-left: 3px solid #fff;
-  border-radius: 15px 0 0 15px;
-
   opacity: 0;
   font-family: "Major Mono Display", monospace;
 }
@@ -291,12 +318,14 @@ form button:hover {
   transform: translateY(0);
 }
 
+/* style links to github projects */
 .github-btn {
   border-radius: 10px;
   padding: 5px;
   border: 10px solid rgba(104, 104, 104, 0.137);
 }
 
+/*create footer that sticks to the bottom on scroll */
 #footer {
   height: 10vh;
   width: 100%;
