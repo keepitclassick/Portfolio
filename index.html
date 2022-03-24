@@ -162,15 +162,17 @@
         <br>
      
           <div class="form-container">
-            <form id="contact-form">
+            <form action= "https://formsubmit.co/e7c0872f282c1ddb43fd7b0d555f3ce2" method="POST" >
               <br><label for="fname">Your Name</label><br>
               <input class="input" type="text" id="fname" name="firstname" placeholder="Your name.." required />
               <br><label for="email">Email</label><br>
               <input class="input" type="text" id="email" name="email" placeholder="Your email" required />
-              <br><label for="message">Message</label><br>
-              <textarea class="input" id="message" name="Message" placeholder="What would you like to talk about?" required></textarea>
-              <br> <button type="submit" value="Submit" class="submit">Send</button><br>
-          </form>
+              <input type="hidden" name="_autoresponse" value="Thanks for your message! Please allow up to 24 hours for a response. If this is urgent, please feel free to DM me on LinkedIn">
+              <br><label for="subject">Message</label><br>
+              <textarea class="input" id="message" name="Message" placeholder="Write something.." required></textarea>
+              <input type="hidden" name="_subject" value="Website Inquiry">
+              <input type="hidden" name="_next" value="https://keepitclassick.github.io/Portfolio/">
+              <br> <input class="input" type="submit" value="Submit"><br>
        
       </div>
     </div>
