@@ -466,6 +466,17 @@ a.nav-item .active {
     min-width: 10vw;
     min-height: 10vh;
   }
+
+  #about {
+    padding-top: none;
+    padding-bottom: 20vh;
+    font-size: 10px;
+  }
+
+  .footer-img {
+    width: 20px;
+    margin: none;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -478,12 +489,6 @@ a.nav-item .active {
     width: 80%;
     height: 80%;
     top: 10;
-  }
-
-  #about {
-    padding-top: none;
-    padding-bottom: 20vh;
-    font-size: 1em;
   }
 
   #footer {
@@ -533,5 +538,10 @@ a.nav-item .active {
 
   #myBtn {
     padding: 10px;
+  }
+
+  .footer-img {
+    width: 50px;
+    margin: none;
   }
 }
