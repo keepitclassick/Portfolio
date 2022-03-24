@@ -169,7 +169,7 @@ form textarea {
   border-radius: 10px;
 }
 
-form button {
+#submit {
   padding: 10px;
   background: #b882b9;
   font-size: 18px;
@@ -180,7 +180,7 @@ form button {
   margin: 20px auto 0;
   border-radius: 20px;
 }
-form button:hover {
+#submit:hover {
   background: #572b58;
 }
 
@@ -294,18 +294,18 @@ form button:hover {
   font-family: "Major Mono Display", monospace;
 }
 
-.img-txt h3 {
+.img-txt a {
   color: rgb(0, 0, 0);
   font-family: "Major Mono Display", monospace;
 }
 
-.img-txt h3:hover {
+.img-txt a:hover {
   color: #b882b9;
   text-shadow: 1px 1px 1px #000;
   cursor: pointer;
 }
 
-.img-txt h3:active {
+.img-txt a:active {
   color: rgb(73, 51, 153);
 }
 
@@ -342,7 +342,7 @@ form button:hover {
   position: fixed; /* Fixed/sticky position */
   bottom: 20px;
   right: 30px;
-  z-index: 101; /* Make sure it does not overlap */
+  z-index: 99; /* Make sure it does not overlap */
   outline: none;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -358,7 +358,6 @@ form button:hover {
 /*resize social media/contact buttons*/
 .footer-img {
   width: 5%;
-  padding: 0.5%;
   margin: none;
 }
 
